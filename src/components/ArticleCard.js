@@ -2,30 +2,7 @@ import React from "react";
 
 import { Link } from "react-router-dom";
 
-const days = [
-  "Sunday",
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday"
-];
-
-const months = [
-  "January",
-  "February",
-  "March",
-  "April",
-  "May",
-  "June",
-  "July",
-  "August",
-  "September",
-  "October",
-  "November",
-  "December"
-];
+import { days, months } from "./dateValues";
 
 function ArticleCard({ articleData }) {
   const date = new Date(articleData.publishedDate);
